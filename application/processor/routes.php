@@ -1,11 +1,22 @@
 <?php
 
 	$request  = $_SERVER['REQUEST_URI'];
+	$request  = str_replace('/framework/', '', $request);
+	$request = explode('/', $request);
 
-	$request = explode('/', $request, 3);
-	$request = explode('/',$request[2]);
+	// for homepage
+	if($request[0] == '' && @!$request[1])
+	{
+		include ("application/views/homepage.php");
+	}
+	
+	else
+	{
+		include ("application/views/404.php");
+	}
+	
+	// console($request);
+	developer('routes' , '1');
 
-	$_SESSION['request'] = $request;
 
-	developer('routes','1');
 ?>
