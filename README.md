@@ -4,3 +4,5 @@ The `General-Purpose-PHP-Framework` is a pseudo-framwork which is customizable t
 
 #### DOCUMENTATION [here]
 [here]: <http://yashkumarverma.github.io/Documentations/General-Purpose-PHP-Framework/>
+
+Just adding a pull request ! :P
